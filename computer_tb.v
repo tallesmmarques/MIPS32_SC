@@ -9,9 +9,8 @@ module computer_tb;
 
   initial begin
     rst = 0;
-    clk = 1;
-    // #12 rst = 1;
-    // #13 rst = 0;
+    clk = 0;
+    // #6 rst = 0;
   end
 
   always #5 clk = !clk;
