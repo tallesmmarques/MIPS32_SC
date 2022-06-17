@@ -1,0 +1,132 @@
+$date
+	Fri Jun 17 16:07:48 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module computer_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$scope module C0 $end
+$var wire 1 ! clk $end
+$var wire 1 " rst $end
+$var wire 32 # dim [31:0] $end
+$var wire 32 $ aim [31:0] $end
+$scope module IM $end
+$var wire 32 % rd [31:0] $end
+$var wire 32 & a [31:0] $end
+$upscope $end
+$scope module P $end
+$var wire 32 ' addressInstr [31:0] $end
+$var wire 1 ! clk $end
+$var wire 32 ( instr [31:0] $end
+$var wire 1 " rst $end
+$var wire 32 ) pc_bar [31:0] $end
+$var wire 32 * pc [31:0] $end
+$scope module PCPlusFour $end
+$var wire 32 + b [31:0] $end
+$var wire 32 , s [31:0] $end
+$var wire 32 - a [31:0] $end
+$upscope $end
+$scope module PCReg $end
+$var wire 1 ! clock $end
+$var wire 32 . pc_bar [31:0] $end
+$var wire 1 " reset $end
+$var reg 32 / pc [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 /
+b100 .
+b0 -
+b100 ,
+b100 +
+b0 *
+b100 )
+b10001100101000000000100000 (
+b0 '
+b0 &
+b10001100101000000000100000 %
+b0 $
+b10001100101000000000100000 #
+0"
+0!
+$end
+#5
+b1000 )
+b1000 ,
+b1000 .
+b10000100101010000000100000 #
+b10000100101010000000100000 %
+b10000100101010000000100000 (
+b100 $
+b100 &
+b100 '
+b100 *
+b100 -
+b100 /
+1!
+#10
+0!
+#15
+b1100 )
+b1100 ,
+b1100 .
+bx #
+bx %
+bx (
+b1000 $
+b1000 &
+b1000 '
+b1000 *
+b1000 -
+b1000 /
+1!
+#20
+0!
+#25
+b10000 )
+b10000 ,
+b10000 .
+b1100 $
+b1100 &
+b1100 '
+b1100 *
+b1100 -
+b1100 /
+1!
+#30
+0!
+#35
+b10100 )
+b10100 ,
+b10100 .
+b10000 $
+b10000 &
+b10000 '
+b10000 *
+b10000 -
+b10000 /
+1!
+#40
+0!
+#45
+b11000 )
+b11000 ,
+b11000 .
+b10100 $
+b10100 &
+b10100 '
+b10100 *
+b10100 -
+b10100 /
+1!
+#50
+0!
