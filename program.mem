@@ -1,4 +1,12 @@
-AC 11 00 08 // sw $s1 0x08($zero)
-8C 11 00 08 // lw $s1 0x08($zero)
-02 32 80 20 // add $s0, $s1, $s2
-02 12 A0 20 // add $s4, $s0, $s2
+// soma os primeiros n números inteiros e expoem em info
+20 0A 00 00 // li t2, 0
+ac 0A 00 fc // sw t2, 0xfc(zero)
+20 10 00 0a // li s0, 10
+20 08 00 00 // li t0, 0
+20 11 00 00 // li s1, 0
+11 10 00 04 // while: beq t0, s0, end
+21 08 00 01 // addi t0, t0, 1
+02 28 88 20 // add s1, s1, t0
+ac 11 00 fc // sw s1, 0xfc(zero)
+10 00 ff fb // beq zero, zero, while
+ac 11 00 fc // end: sw s1, 0xfc(zero)

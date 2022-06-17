@@ -9,8 +9,6 @@ module registers_file (
   integer i;
   initial begin
     registers[0] = 0;
-    registers[17] = 12;
-    registers[18] = 7;
   end
 
   always @(posedge clk) begin
